@@ -14,13 +14,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="scripts/script.js" defer></script>
     <link rel="stylesheet" href="css/dashboard.css"> <!-- Links to the appropiate CSS file -->
+    
 </head>
 <body>
     <header>
-        <div>
-            <h1>Search</h1>
-            <h1>Search</h1>
+
+        <div style="float:inline-start;" class="searchfunction">
+            <input type="Text" placeholder="Search..">
+            
+
+
+        </div>
+
+        <div style="float:inline-start;" class="dropdown-container">
+            <button onclick="toggleFilters()" class="dropbtn">Filters</button>
+            <div id="filtersDropdown" class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+        <div style="float: inline-start;"   class="dropdown-container">
+            <button onclick="toggleFavorites()" class="dropbtn">Favorites</button>
+            <div id="favoritesDropdown" class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Doctor Michael</a>
+            </div>
+
+        </div>
+        <div style="float: inline-start;" class="dropdown-container">
+            <button type="button">Profile</button>
         </div>
     </header>
 </body>
