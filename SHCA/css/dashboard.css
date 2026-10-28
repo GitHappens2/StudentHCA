@@ -1,18 +1,16 @@
 body {
-    background-image: url('../images/mapBackground.png');
+    background-image: url('../images/googleMapOfDenton.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-
-
-.dropdown-container{
+.dropdown-container{ /* Dropdown Container Positinal and Disply Content KH*/
     position: relative;
     display: inline-block;
     justify-content: end;
 }
 
-.dropbtn {
+.dropbtn { /*Physical Button Physical characteristics KH*/
   background-color: #7098C2;
   color: white;
   padding: 16px;
@@ -22,17 +20,17 @@ body {
 }
 
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus { /*Button Hover Color KH*/
   background-color: #2980B9;
 }
 
 
-.dropdown {
+.dropdown { /*Drop down Box KH*/
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content { /*Physical Box display for dropdown menu KH*/
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -42,7 +40,7 @@ body {
 }
 
 
-.dropdown-content a {
+.dropdown-content a { /*Items within the dropdown box KH*/
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -50,7 +48,7 @@ body {
 }
 
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd;} /*Hover fuctionality for drop down Options KH*/
 
 
 .show {display:block;}

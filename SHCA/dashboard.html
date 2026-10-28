@@ -1,19 +1,75 @@
+<!-- DASHBOARD PAGE. -->
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <title>SHCA</title>
-
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>SHCA Dashboard</title>
+    <!-- Scripts -->
     <script src="scripts/script.js" defer></script>
-    <link rel="stylesheet" href="css/example.css">
-
+    <!-- Links and Stylesheets -->
+    <link rel="stylesheet" href="css/dashboard.css"> <!-- Links to the appropiate CSS file -->
 </head>
-    <body>
-        <div class="dropdown">
-            <
+<body>
+    <!-- GLOBAL HEADER -->
+    <header>
+        <!--NavBar, use this at the top of every page, UPDATE WHICH ONE IS THE "active" CLASS WJF-->
+        <nav class ="navbar">
+        <div class="logo"><a href="index.html">index</a></div>
 
+        <ul class="nav-links">
+            <li><a href="login.html"                    > login     </a></li>
+            <li><a href="creation.html"                 > creation  </a></li>
+            <li><a href="index.html"                    > index     </a></li>
+            <li><a href="dashboard.html" class="active" > dashboard </a></li>
+            <li><a href="favorites.html"                > favorites </a></li>
+            <li><a href="profile.html"                  > profile   </a></li>
+        </ul>
+        </nav>
+    </header>
 
+    <!-- MAIN -->
+    <main>
+        <!-- idk what this is for either -->
+        <div style="float:inline-start;" class="searchfunction">
+            <input type="Text" placeholder="Search..">
         </div>
-    </body>
 
+        <div style="float:inline-start;" class="dropdown-container">
+            <button onclick="toggleFilters()" class="dropbtn">Filters</button>
+            <div id="filtersDropdown" class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+
+        <div style="float: inline-start;"   class="dropdown-container">
+            <button onclick="toggleFavorites()" class="dropbtn">Favorites</button>
+            <div id="favoritesDropdown" class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Doctor Michael</a>
+            </div>
+        </div>
+
+        <div style="float: inline-start;" class="dropdown-container">
+            <button type="button">Profile</button>
+        </div>
+
+    <!-- 
+        idk what this is for 
+        <div class="dropdown"> 
+        </div> 
+    -->
+
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+
+    </footer>
+</body>        
 </html>

@@ -1,52 +1,43 @@
-<!--    Hello there! I am going through a LinkedIn Learning course about HTML 
-        so I am just adding some structure that they recommend. This file is TEMPORARILY
-        named "page1" because I wasn't sure if we wanted to call it the dashboard.html or homepage.html.
-    - Sal
--->
+<!-- LANDING PAGE -->
 
-<!-- Okay, so when learning more, the "index" file is what HTML loads automatically. 
-     This will be where we create the "Landing Page" but for now we must just develop the dashboard. - Sal -->
-
-     <!-- what?? -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Title -->
+    <title>SHCA Landing Page</title>
+    <!-- Scripts -->
     <script src="scripts/script.js" defer></script>
-    <link rel="stylesheet" href="css/dashboard.css"> <!-- Links to the appropiate CSS file -->
-    
+    <!-- Links and Stylesheets -->
 </head>
 <body>
+    <!-- GLOBAL HEADER -->
     <header>
-
-        <div style="float:inline-start;" class="searchfunction">
-            <input type="Text" placeholder="Search..">
-            
-
-
-        </div>
-
-        <div style="float:inline-start;" class="dropdown-container">
-            <button onclick="toggleFilters()" class="dropbtn">Filters</button>
-            <div id="filtersDropdown" class="dropdown-content">
-                <a href="#">Option 1</a>
-                <a href="#">Option 2</a>
-                <a href="#">Option 3</a>
-            </div>
-        </div>
-        <div style="float: inline-start;"   class="dropdown-container">
-            <button onclick="toggleFavorites()" class="dropbtn">Favorites</button>
-            <div id="favoritesDropdown" class="dropdown-content">
-                <a href="#">Option 1</a>
-                <a href="#">Doctor Michael</a>
-            </div>
-
-        </div>
-        <div style="float: inline-start;" class="dropdown-container">
-            <button type="button">Profile</button>
-        </div>
+        <!--NavBar, use this at the top of every page, UPDATE WHICH ONE IS THE "active" CLASS WJF-->
+        <nav class ="navbar">
+        <div class="logo"><a href="index.html">index</a></div>
+        
+        <ul class="nav-links">
+            <li><a href="login.html"                > login     </a></li>
+            <li><a href="creation.html"             > creation  </a></li>
+            <li><a href="index.html" class="active" > index     </a></li>
+            <li><a href="dashboard.html"            > dashboard </a></li>
+            <li><a href="favorites.html"            > favorites </a></li>
+            <li><a href="profile.html"              > profile   </a></li>
+        </ul>
+        </nav>
     </header>
+
+    <!-- MAIN -->
+    <main>
+
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer>
+
+    </footer>
 </body>
 </html>
