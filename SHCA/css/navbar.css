@@ -1,1 +1,129 @@
 /* --- NAVBAR --- */
+/* ==========================================
+   Header & Navbar Base Styles
+   ========================================== */
+
+/* Remove default browser margins and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* ==========================================
+   Logo Styles
+   ========================================== */
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: -0.5px;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #2563eb;
+}
+
+/* ==========================================
+   Navigation Links
+   ========================================== */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap:2rem;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+  color: #2563eb;
+  background-color: #f3f4f6;
+}
+
+/* Active Page Indicator */
+.nav-links li a.active {
+  color: #2563eb;
+  font-weight: 600;
+  background-color: #eff6ff;
+}
+
+/* Optional: Active indicator bar under the link */
+.nav-links li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background-color: #2563eb;
+  border-radius: 2px;
+}
+
+.nav-logo {
+  height: 40px;    /* Adjust this value to scale your logo up or down */
+  width: auto;     /* Keeps the aspect ratio perfectly intact */
+  display: block;  /* Removes inline whitespace gaps beneath the image */
+  justify-content: left;
+}
+
+/* ==========================================
+   Responsive Design (Mobile Devices)
+   ========================================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li a {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.6rem;
+  }
+}

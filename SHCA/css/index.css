@@ -1,0 +1,47 @@
+.dropdown-container{ /* Dropdown Container Positinal and Disply Content KH*/
+    position: relative;
+    display: center;
+    justify-content: center;
+}
+
+.dropbtn { /*Physical Button Physical characteristics KH*/
+  background-color: #7098C2;
+  color: white;
+  padding: 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropbtn:hover, .dropbtn:focus { /*Button Hover Color KH*/
+  background-color: #2980B9;
+}
+
+
+.dropdown { /*Drop down Box KH*/
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content { /*Physical Box display for dropdown menu KH*/
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a { /*Items within the dropdown box KH*/
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;} /*Hover fuctionality for drop down Options KH*/
+
+.show {display:block;}
