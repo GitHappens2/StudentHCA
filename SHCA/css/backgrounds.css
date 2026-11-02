@@ -1,0 +1,22 @@
+/* This is the file I am using to apply the backgrounds to each page.
+    Turns out you can use one file for multiple pages! We just need
+    to use classes on each of the bodies in the html files and then
+    we can apply specific changes to it with one CSS file like 
+    below. - SR */
+
+body.accounts { /* Sign-in & Account BG - SR*/
+    background-image: url('../images/accountBG.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body.landing { /* Landing BG. Very temporary, I do not love it as is. - SR*/
+    background-image: url('../images/landingBG.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.dashboard { /* Dashboard BG - SR*/
+    background-image: url('../images/googleMapOfDenton.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

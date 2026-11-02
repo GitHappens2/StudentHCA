@@ -1,9 +1,4 @@
-body {
-    background-image: url('../images/googleMapOfDenton.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
+/* --- DASHBOARD PAGE --- */
 .dropdown-container{ /* Dropdown Container Positinal and Disply Content KH*/
     position: relative;
     display: inline-block;
