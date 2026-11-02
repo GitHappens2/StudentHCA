@@ -20,3 +20,9 @@ body.dashboard { /* Dashboard BG - SR*/
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+body.profile { /* Profile BG, still not 100% sold - SR */
+    background-image: url('../images/profileBG.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
