@@ -12,6 +12,7 @@
     <script src="scripts/script.js" defer></script>
     <!-- Links and Stylesheets -->
      <link rel="stylesheet" href="css/backgrounds.css">
+     <link rel="stylesheet" href="css/index.css">
 </head>
 <body class="landing">
     <!-- GLOBAL HEADER -->
@@ -37,7 +38,37 @@
         <!-- Centerpiece for page -SR -->
         <img src="images/logo.svg" alt="A picture of a book behind a graduation cap with a heart inside of it.">
         <p>Let's find the doctor you need</p>
-        <a href="dashboard.html">Then filter options going here and stuff, nice!</a>
+
+
+        <!--Below is the filtering settings to allow people to search for doctor immediately, 
+        this can be changed but this is the basic search system WJF-->
+        <div style="float:inline-start;" class="dropdown-container">
+            <button onclick="toggleFilters()" class="dropbtn">Type of Doctor</button>
+            <div id="filtersDropdown" class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+
+        <div style="float: inline-start;"   class="dropdown-container">
+            <button onclick="toggleFavorites()" class="dropbtn">University</button>
+            <div id="favoritesDropdown" class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Doctor Michael</a>
+            </div>
+        </div>
+
+
+        <div style="float: inline-start;"   class="dropdown-container">
+            <button onclick="toggleFavorites()" class="dropbtn">Distance</button>
+            <div id="favoritesDropdown" class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Doctor Michael</a>
+            </div>
+        </div>
+
+
     </main>
 
     <!-- GLOBAL FOOTER -->
