@@ -4,25 +4,19 @@
     we can apply specific changes to it with one CSS file like 
     below. - SR */
 
-body.accounts { /* Sign-in & Account BG - SR*/
-    background-image: url('../images/accountBG.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-body.landing { /* Landing BG. Very temporary, I do not love it as is. - SR*/
-    background-image: url('../images/landingBG.svg');
+body { /* Just figured out you can apply all of them with one class, may make it so its just for a specific background class to make it so we can specify other stuff but I do not know yet. Maybe we don't need to because those say background n stuff? -SR */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-body.dashboard { /* Dashboard BG - SR*/
-    background-image: url('../images/googleMapOfDenton.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+/* Sign-in & Account BG -SR */
+body.accounts { background-image: url('../images/accountBG.svg'); }
 
-body.profile { /* Profile BG, still not 100% sold - SR */
-    background-image: url('../images/profileBG.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+/* Landing BG. Very temporary, I do not love it as is. -SR */
+body.landing { background-image: url('../images/landingBG.svg');}
+
+/* Dashboard BG - SR*/
+body.dashboard { background-image: url('../images/googleMapOfDenton.png'); }
+
+/* Profile BG, still not 100% sold - SR */
+body.profile { background-image: url('../images/profileBG.svg'); }

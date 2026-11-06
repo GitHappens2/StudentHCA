@@ -1,5 +1,4 @@
 <!-- DASHBOARD PAGE. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +11,14 @@
     <script src="scripts/script.js" defer></script>
     <script type="module" src="scripts/dashboard.js"></script>
     <!-- Links and Stylesheets -->
-    <link rel="stylesheet" href="css/dashboard.css"> <!-- Links to the appropiate CSS file -SR-->
-    <link rel="stylesheet" href="css/backgrounds.css"> <!-- Gives the page the background -SR-->
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/dashboard.css">    <!-- Most of the CSS for the Dashboard -SR-->
+    <link rel="stylesheet" href="css/backgrounds.css">  <!-- Background for Dashboard (TEMPORARY) -SR-->
+    <link rel="stylesheet" href="css/navbar.css">       <!-- CSS for the Navbar -WF -->
 </head>
 <body class="dashboard">
     <!-- GLOBAL HEADER -->
     <header>
-        <!--NavBar, use this at the top of every page, UPDATE WHICH ONE IS THE "active" CLASS WJF-->
+        <!--The Navbar -WF -->
         <nav class ="navbar">
         <div class="logo"><a href="index.html"><img src="images/logo.svg" class=nav-logo></a></div> <!-- What is this line for? -SR -->
 
@@ -28,7 +27,7 @@
                                                                 this to make it take you back somehwere else (like the dashboard) WJF-->
 
         <ul class="nav-links">
-            <li><a href="index.html"                    > index     </a></li>
+            <li><a href="index.html"                    > index     </a></li> <!-- Probably dont need if we have the logo button. -SR -->
             <li><a href="dashboard.html" class="active" > dashboard </a></li>
             <li><a href="favorites.html"                > favorites </a></li>
             <li><a href="profile.html"                  > profile   </a></li>
@@ -38,7 +37,7 @@
 
     <!-- MAIN -->
     <main>
-        <!-- idk what this is for either -->
+        <!-- These will need to be refined and such. -SR -->
         <div style="float:inline-start;" class="searchfunction">
             <input type="Text" placeholder="Search..">
         </div>
@@ -63,15 +62,9 @@
         <div style="float: inline-start;" class="dropdown-container">
             <button type="button">Profile</button>
         </div>
-
-    <!-- 
-        idk what this is for 
-        <div class="dropdown"> 
-        </div> 
-    -->
-    <!-- search results get displayed here by dashboard.js -->
-     <div id="results" style="clear: both;"></div>
-
+        <!-- search results get displayed here by dashboard.js
+        div id="results" style="clear: both;"></div> -->
+        <!-- ↑ What is this? -SR  -->
     </main>
 
     <!-- GLOBAL FOOTER -->

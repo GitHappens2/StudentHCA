@@ -1,5 +1,4 @@
 <!-- LANDING PAGE -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,31 +16,22 @@
 <body class="landing">
     <!-- GLOBAL HEADER -->
     <header>
-        <!-- NavBar, use this at the top of every page, UPDATE WHICH ONE IS THE "active" CLASS WJF
-        <nav class ="navbar">
-        <div class="logo"><a href="index.html">index</a></div>
-        
-        <ul class="nav-links">
-            <li><a href="signin.html"               > login     </a></li>
-            <li><a href="creation.html"             > creation  </a></li>
-            <li><a href="index.html" class="active" > index     </a></li>
-            <li><a href="dashboard.html"            > dashboard </a></li>
-            <li><a href="favorites.html"            > favorites </a></li>
-            <li><a href="profile.html"              > profile   </a></li>
-        </ul>
-        </nav> DONT KNOW IF THIS PAGE NEEDS IT - SR -->
+        <!-- Person Image -->
         <p><a href="signin.html">Sign In</a></p> <!-- This is for the button in the top left area -SR -->
     </header>
 
     <!-- MAIN -->
     <main>
         <!-- Centerpiece for page -SR -->
-        <img src="images/logo.svg" alt="A picture of a book behind a graduation cap with a heart inside of it.">
+        <img src="images/logo.svg" 
+             width="250"
+             alt="A picture of a book behind a graduation cap with a heart inside of it.">
         <p>Let's find the doctor you need</p>
+        <a href="dashboard.html">Move to dashboard</a> <br>
 
-
-        <!--Below is the filtering settings to allow people to search for doctor immediately, 
-        this can be changed but this is the basic search system WJF-->
+        <!-- This section needs more comments -SR -->
+        <!--Below is the filtering settings to allow people to search for doctor immediately,
+        this can be changed but this is the basic search system -WJF -->
         <div style="float:inline-start;" class="dropdown-container">
             <button onclick="toggleFilters()" class="dropbtn">Type of Doctor</button>
             <div id="filtersDropdown" class="dropdown-content">
@@ -59,7 +49,6 @@
             </div>
         </div>
 
-
         <div style="float: inline-start;"   class="dropdown-container">
             <button onclick="toggleFavorites()" class="dropbtn">Distance</button>
             <div id="favoritesDropdown" class="dropdown-content">
@@ -67,8 +56,6 @@
                 <a href="#">Doctor Michael</a>
             </div>
         </div>
-
-
     </main>
 
     <!-- GLOBAL FOOTER -->

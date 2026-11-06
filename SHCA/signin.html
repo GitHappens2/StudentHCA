@@ -34,13 +34,28 @@
 
     <!-- MAIN -->
     <main>
-        <!-- The Sign-in Box -->
-        <h1>Sign In</h1>
-        <p>or <a href="creation.html">create an account</a></p>
-        <input type="text" placeholder="Username"><br>
-        <input type="text" placeholder="Password">
-        <p>Remember Me?</p>
-        <p><a href="dashboard.html">Sign In</a></p>
+        <!-- The Sign-in Box -SR -->
+        <form action="">
+            <div> <!-- Heading Section -->
+                <h1>Sign In</h1>
+                <p>or <a href="creation.html">create an account</a></p>
+            </div>
+            <div> <!-- Username Section -->
+                <label for="s_username">Username</label>
+                <input type="text" id="s_username" name="s_username" placeholder="User1234">
+            </div>
+            <div> <!-- Password Section -->
+                <label for="s_password">Password</label>
+                <input type="text" id="s_password" name="s_password">
+            </div>
+            <div> <!-- Remember Me Section -->
+                <input type="checkbox" id="s_remember" name="s_remember">
+                <label for="s_remember">Remember Me</label>
+            </div>
+            <div> <!-- Submit Button Section -->
+                <button type="submit">Sign In</button>
+            </div>
+        </form>
     </main>
 
     <!-- GLOBAL FOOTER -->
