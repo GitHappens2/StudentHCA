@@ -1,3 +1,26 @@
+/* Custom Properties -SR
+----------------------------------------*/
+
+/* Heading Sign-in Button -SR
+----------------------------------------*/
+header {
+  position: left;
+}
+
+/* Logo Centerpiece -SR
+----------------------------------------*/
+.center-container {
+  border: 2px solid rgb(75 70 74);
+  border-radius: 0.5em;
+  font: 1.2em sans-serif;
+  
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .dropdown-container{ /* Dropdown Container Positinal and Disply Content KH*/
     position: relative;
     display: center;
@@ -12,7 +35,6 @@
   border: none;
   cursor: pointer;
 }
-
 
 .dropbtn:hover, .dropbtn:focus { /*Button Hover Color KH*/
   background-color: #2980B9;
